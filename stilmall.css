@@ -1,0 +1,690 @@
+:root {
+  --caramel: #8C561C;
+  --lightcream: #F8F6F0;
+  --darkbrown: #48392A;
+  --toffee: #E3AF78;
+
+
+  --pastelgreen: #AECEAA;
+  --pastelpink:  #EEBBB4;
+  --pastelyellow: #F0DB87;
+  --textcontent: normal normal normal 22px/36px Glacial Indifference;
+  --textcontentthinner: normal normal normal 18px/20px Glacial Indifference;
+}
+#divbox {
+  background-color: black;
+  height: 55px;
+  width: 150px;
+  position: absolute;
+  //background-blend-mode:  overlay;
+  display: none;
+}
+body {
+  margin: 0px;
+  padding: 0px;
+}
+
+h1,h2, h3, table{
+  margin-left: 40px;
+  font: normal normal bold 36px/30px Glacial Indifference;
+}
+
+h2 {
+  /* drinks/lunch etc.*/
+  //padding-top: 10px;
+  letter-spacing: 3px;
+}
+
+table {
+  padding-right: 20px;
+}
+td {
+  font: normal normal normal 22px/36px Glacial Indifference;
+  letter-spacing: 1px;
+  padding-right: 40px;
+  text-align: left;
+  border-bottom: 1px solid var(--lightcream);
+}
+
+
+
+h3 {
+  font-size: 22px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+p {
+  font: normal normal normal 22px/30px Glacial Indifference;
+  margin-left: 40px;
+
+}
+
+label {
+  font: var(--textcontent);
+
+}
+
+#header_logo {
+  display: inline-block;
+  width: 80%;
+  text-align: center;
+
+}
+
+#cafedeparislogo {
+  margin-top: 22px;
+  text-align: center;
+  display: inline-block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 350px;
+  position: relative;
+  left: 12.5%;
+}
+
+
+
+
+#language {
+  text-align: right;
+  float: right;
+  color: var(--caramel);
+  margin-right: 20px;
+  margin-top: 20px;
+  display: inline-block;
+  position: relative;
+  font: var(--textcontent);
+  letter-spacing: 1px;
+
+}
+#language a, #languageresponsive, #languageresponsive a{
+  text-decoration: none;
+  color: var(--caramel);
+  font: var(--textcontent);
+  letter-spacing: 1px;
+
+}
+
+#banner {
+  background:url(images/cafeinside.png) rgba(255, 252, 242, 0.9);
+  height: 140px;
+  width: 100%;
+  background-size:cover;
+  background-blend-mode: overlay;
+  position: fixed;
+  display: block;
+  top: 0;
+
+}
+
+#banneroverlay {
+  width: 100%;
+
+}
+
+#hamburgericon {
+  display: none;
+
+}
+
+nav {
+  position: fixed;
+  margin: 0;
+  top: 140px;
+  width: 100%;
+
+}
+
+#navbar {
+  background-color: var(--caramel);
+
+
+  color: var(--lightcream);
+  text-align: center; /* This centers the nav text */
+
+}
+
+#navbar ul {
+  display: inline-block;
+  list-style-type: none;
+  padding:0;
+  margin: 20;
+
+}
+
+#navbar li, #navbar li a {
+  font: normal normal normal 22px/32px Glacial Indifference;
+  letter-spacing: 3px;
+  padding-left: 9px;
+  padding-right: 9px;
+  display: inline;
+  text-decoration: none;
+
+}
+#navbar li {
+  //border: 1px solid green;
+  margin: 0;
+  padding: 2px;
+
+
+  border: 0px solid var(--lightcream);
+
+}
+
+#navbar a {
+  float: none;
+  left: 50%;
+  padding: 0px;
+  margin: 0;
+  color: var(--lightcream);
+
+}
+
+
+#hamnav label, #hamburger {
+  display: none;
+
+}
+.languagebottomclass  {
+  display: none;
+}
+
+.navbarclass {
+  display: block;
+
+}
+
+/*--------------------------------FRONTPAGE-----------------*/
+
+
+#startpage {
+  color: var(--darkbrown);
+  padding-top: 190px;
+  background:url(images/cafeinside.png) rgba(255, 252, 247, 0.95);
+  background-size: 108%;
+  background-blend-mode: overlay;
+
+
+}
+#startpage h1 {
+  margin: 0;
+  padding-left: 40px;
+  padding-top: 36px;
+  padding-bottom: 20px;
+
+
+}
+
+.smalldivbreaker {
+  height: 5px;
+  background-color: var(--toffee);
+  padding: 0px;
+  margin-left: 40px;
+  margin-top: -10px;
+  margin-bottom: -10px;
+  margin-right: 0px;
+
+}
+
+.frontpagesquare {
+  width: 32%;
+  float: left;
+
+}
+
+.threecolumncontent {
+  display: inline-block;
+  padding-bottom: 20px;
+
+}
+
+
+.pagebreaker {
+  height: 30px;
+  width: 100%;
+
+}
+
+.foodmenu {
+  display: inline-block;
+  margin-bottom: 60px;
+
+}
+
+.headingdivbreaker {
+  height: 5px;
+  background-color: var(--toffee);
+  margin-top: 40px;
+  margin-bottom: 20px;
+  margin-left: 40px;
+  margin-right: 40px;
+
+}
+
+/*--------------------DRINKS-------------------------------*/
+
+#drinkpage {
+  color: var(--lightcream);
+  background: url(images/coffee.png) rgba(40, 30, 16, 0.98);
+  background-blend-mode: multiply;
+  background-size: 100%;
+
+}
+
+#drinkpage .pagebreaker {
+  background-color: var(--toffee);
+
+}
+
+
+/*--------------------LUNCH-------------------------------*/
+#lunchpage {
+  background: url(images/salad.png), rgba(5,40,2,0.92);
+  background-blend-mode: darken;
+  background-size: 108%;
+
+  color: var(--lightcream);
+
+}
+
+#lunchpage .pagebreaker, #lunchpage .headingdivbreaker {
+  background-color: var(--pastelgreen);
+
+}
+
+
+/*--------------------BREAKFAST-------------------------------*/
+#breakfastpage {
+  background: url(images/breakfast.jpg), rgba(27,22,0,0.95);
+  background-blend-mode: darken;
+  background-size: 108%;
+  color: var(--lightcream);
+
+}
+
+#breakfastpage .pagebreaker, #breakfastpage .headingdivbreaker {
+  background-color: var(--pastelyellow);
+
+}
+
+
+/*--------------------PASTRIES-------------------------------*/
+#pastrypage {
+  background: url(images/pastries.png), rgba(30,20,20,0.9);
+  background-blend-mode: darken;
+  background-size: 108%;
+  color: var(--lightcream);
+
+
+}
+
+#pastrypage .pagebreaker, #pastrypage .headingdivbreaker {
+  background-color: var(--pastelpink);
+
+}
+
+/*--------------------CONTACT-------------------------------*/
+.onecolumn {
+  float: left;
+  width: 30%;
+  margin: 10px;
+  padding: 0px;
+}
+
+#contactcontent {
+  display: inline-block;
+  width: 100%;
+}
+
+#contactpage {
+  background: url(images/telephone.png), rgba(0,0,0,0.9);
+  background-blend-mode: darken;
+  color: var(--lightcream);
+
+}
+
+ #socialmediacolumn {
+   padding-right: 10px;
+   float: left;
+
+}
+
+#contactpage .pagebreaker, #contactpage .headingdivbreaker {
+  background-color: var(--lightcream);
+
+}
+
+#videocolumn {
+  float: right;
+  padding-right: 30px;
+
+}
+
+
+#contactform {
+  text-align: left;
+  padding-left: 30px;
+
+}
+
+#contactform input, #contactform textarea {
+  width: 80%;
+  height: 25px;
+  border-radius: 5px;
+  border: 1px solid grey;
+}
+
+#contactform textarea {
+  height: 95px;
+}
+
+#progressbar {
+  //display: none;
+  width: 80%;
+  //background-color: blue;
+  border-radius: 2px;
+  border: 2px solid white;
+
+  margin-top: 10px;
+}
+#progressbar p {
+  padding: 0;
+  margin: 5px;
+  color: white;
+
+}
+#progressarea {
+  background-color: green;
+  width: 10px;
+}
+
+#contactform input[type=text], #contactform textarea[name="message"] {
+  padding: 7px;
+  font: var(--textcontentthinner);
+  border-radius: 5px;
+  background-color: grey;
+}
+
+
+#contactpage a {
+  color: var(--lightcream);
+  font: var(--textcontent);
+}
+
+#fblogo, #instalogo, #maillogo, #telelogo, #maplogo {
+  width: 30px;
+  margin-right: 15px;
+
+}
+
+footer .smalldivbreaker {
+  padding: 0;
+  margin: 0;
+  height: 10px;
+  background-color: var(--caramel);
+}
+
+
+footer h4 {
+
+  font: normal normal normal 28px/5px Glacial Indifference;
+  letter-spacing: 1px;
+}
+
+footer {
+  background-color:rgba(0,0,0,0.5);
+
+}
+footer a {
+  color: var(--lightcream);
+  font: var(--textcontent);
+  letter-spacing: 1px;
+
+}
+#copyrightfooter {
+  text-align: right;
+  margin-right: 20px;
+  margin-top: 0;
+  padding-top: 0;
+
+}
+#links {
+  text-align: center;
+
+}
+
+.footerlogo {
+  text-align: center;
+  margin-top: 20px;
+
+}
+
+
+@media screen and (max-width: 800px) {
+
+ #navbar li a {
+   color: var(--caramel);
+ }
+
+  h1, h2, h3, table {
+    font: normal normal bold 24px/36px Glacial Indifference;
+    margin-left: 20px;
+  }
+
+  #startpage h1 {
+    font-size: 34px;
+    padding-left: 0;
+    margin-left: 20px;
+    margin-top: 15px;
+
+  }
+  #startpage, #drinkpage, #lunchpage, #breakfastpage, #pastrypage {
+      background-size: 400%;
+  }
+
+
+
+  p {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+
+  table {
+    padding-right: 5px;
+    margin: 20px;
+  }
+
+  td {
+    font: normal normal normal 22px/30px Glacial Indifference;
+    letter-spacing: 1px;
+    padding-right: 8px;
+    //text-align: left;
+    //border-bottom: 1px solid var(--lightcream);
+  }
+
+  .smalldivbreaker, .headingdivbreaker {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+
+  #startpage {
+    padding-top: 100px;
+    background-size: 508%;
+
+  }
+
+  .frontpagesquare, .onecolumn {
+    width: 100%;
+    display: block;
+    //border: 3px solid green;
+    padding: 0px;
+
+  }
+  .onecolumn {
+    padding: 0px;
+    margin: 0px;
+    width: 100%;
+  }
+
+
+  .headerclass.responsive {
+    display: block;
+    background-color: var(--caramel);
+    width: 100%;
+    height: 100%;
+
+  }
+
+
+
+  #navbar {
+    background-color: var(--lightcream);
+    opacity: 1;
+  }
+  #minimizebanner {
+    display: none;
+    position: fixed;
+    top: 10px;
+    left: 10px;
+  }
+
+  #hamburgericon {
+    display: inline-block;
+    position: relative;
+    float: right;
+    top: 50px;
+    margin-right: 20px;
+
+  }
+  #cafedeparislogo {
+
+    width: 50%;
+    //left: 9%;
+    margin-bottom: 5px;
+
+  }
+  #banner {
+    height: 120px;
+    border-bottom: 5px solid var(--caramel);
+  }
+  #hamnav label {
+    display: inline-block;
+  }
+  #hamitems li, #hamitems li a {
+    display: block;
+    color: var(--caramel);
+  }
+
+  .navbarclass {
+    display: none;
+  }
+
+  .navbarclass.responsive {
+    display: block;
+    height: 100vh;
+
+
+
+  }
+  #navbar ul, #navbar li,, #navbar li a, #hamnav{
+    margin: 0;
+    color: var(--caramel);
+
+
+  }
+  #navbar li {
+    margin-top: 15px;
+
+
+  }
+  #navbar ul {
+
+    display: block;
+    padding-top: 150px;
+    vertical-align: middle;
+  }
+  #hamnav {
+    top: 0;
+  }
+  .navbarclass.responsive #navlist a {
+    display: block;
+    height: 100%;
+    width: 100%;
+  }
+
+  .navbarclass.responsive #navlist {
+    background-color: #F8F6F0;
+    color: var(--darkbrown);
+
+  }
+  .startpageclass {
+    display: block;
+
+  }
+  .startpageclass.responsive {
+    background: none;
+  }
+
+
+  #language {
+    display: none;
+  }
+
+
+  .languagebottomclass  {
+    display: none;
+  }
+
+
+  .languagebottomclass.responsive {
+    bottom: 0;
+    position: fixed;
+    display: block;
+    padding: 20px ;
+    width: 100%;
+    text-align: center;
+    background-color: rgba(227,175,120,0.27);
+    background-blend-mode: overlay;
+
+  }
+
+
+  #contactform {
+    padding-left: 20px;
+    margin: 0px;
+
+  }
+  #socialmediacolumn {
+    padding: 0px;
+    float: left;
+
+ }
+ #videocolumn {
+   padding-left: 20px;
+   float: left;
+   width: 80%;
+   margin: 0;
+
+ }
+
+ #videocolumn p {
+   margin: 0;
+   padding: 0;
+ }
+
+ #copyrightfooter {
+   margin: 0;
+   padding-bottom: 20px;
+   padding-right: 20px;
+   padding-top: 10px;
+ }
+ #minimizebanner {
+   display: block;
+ }
+
+
+}
+
+
+}

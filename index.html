@@ -1,0 +1,523 @@
+<!DOCTYPE html>
+
+<html lang="sv" dir="ltr">
+  <head>
+    <meta charset="utf-8" >
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="stilmall.css">
+    <script src="myScript.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <title>Cafe de Paris</title>
+    <meta name="description" content="Cafe de Paris webbsida">
+    <meta name="keywords" content="cafe de paris,vasa,kafe, kafe vasa, vasa kafe, cafe vasa, vaasa">
+    <meta name="author" content="Sandra Rannanpää">
+    <script>
+      $(document).ready(function(){
+
+        $("#startnav").click(function(){
+          setNavBG("#startnav");
+        });
+        $("#drinknav").click(function(){
+          setNavBG("#drinknav");
+        });
+        $("#lunchnav").click(function(){
+          setNavBG("#lunchnav");
+        });
+        $("#breakfastnav").click(function(){
+          setNavBG("#breakfastnav");
+        });
+        $("#pastrynav").click(function(){
+          setNavBG("#pastrynav");
+        });
+        $("#contactnav").click(function(){
+          setNavBG("#contactnav");
+        });
+
+        function setNavBG(navitem) {
+          $(".navitem").animate({borderWidth:'0px', opacity: 1});
+          $(navitem).animate({borderWidth: '2px', opacity: '0.7'});
+          ;
+        }
+
+
+        $("#minimizebanner").click(function(){
+          $("#banner").slideToggle("slow")
+
+        });
+
+      });
+
+
+    </script>
+
+  </head>
+  <body>
+
+    <header>
+      <div class="headerclass" id="headerdivId">
+        <div class="bannerclass" id="banner">
+          <div id="header_logo">
+            <img class="logoclass" id="cafedeparislogo" src="images/logo.png" alt="Cafe de paris logo">
+          </div>
+          <div class="languageclass" id="language">
+            <a href="#finsksida" id="fi" onclick="languagechoice('fi')">FI</a> |
+            <a href="#svensksida"id="sv" onclick="languagechoice('sv')">SV</a> |
+            <a href="#engelsksida"id="en" onclick="languagechoice('en')">EN</a>
+          </div>
+            </div>
+      <nav id="hamnav">
+        <button type="button" id="minimizebanner" name="button">Minimize</button>
+
+          <a href="javascript:void(0);" id="hamburgerlink" onclick="testResponsive()"><img id="hamburgericon" src="images/icon_open-menu.png" alt="hamburger menu"></a>
+        <div class="navbarclass" id="navbar">
+
+          <ul id="navlist">
+
+            <li class="navitem" id="startnav"><a href="javascript:void(0)" onclick="scrollToId('startpage')" onmouseover="boldtext(this)" >STARTSIDA</a></li>
+            <li class="navitem" id="drinknav"><a href="javascript:void(0)" onclick="scrollToId('drinkpage')">DRYCKER</a></li>
+            <li class="navitem" id="lunchnav"><a href="javascript:void(0)" onclick="scrollToId('lunchpage')">LUNCH</a></li>
+            <li class="navitem" id="breakfastnav"><a href="javascript:void(0)" onclick="scrollToId('breakfastpage')">FRUKOST</a></li>
+            <li class="navitem" id="pastrynav"><a href="javascript:void(0)" onclick="scrollToId('pastrypage')">BAKVERK OCH SÖTT</a></li>
+            <li class="navitem" id="contactnav"><a href="javascript:void(0)" onclick="scrollToId('contactpage')">KONTAKT</a></li>
+
+          </ul>
+        </div>
+        <div class="languagebottomclass" id="languageresponsive">
+          <a href="#finsksida"  >FI</a> |
+          <a href="#svensksida"  id="sv" onclick="languagechoice('sv')">SV</a> |
+          <a href="#engelsksida"  >EN</a>
+        </div>
+      </nav>
+      </div>
+      <div id="headerbreaker">
+      </div>
+    </header>
+      <div class="startpageclass" id="startpage">
+        <h1>Välkommen till Cafe de Paris!</h1>
+
+        <div class="threecolumncontent" id="threecolumnId">
+          <div class="frontpagesquare" id="squareId">
+            <h3>Om oss</h3>
+            <div class="smalldivbreaker" onmouseover="boldtext(this)">
+            </div>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.co laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+          </div>
+          <div class="frontpagesquare">
+            <h3>Nyheter</h3>
+            <div class="smalldivbreaker">
+            </div>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.si ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+          </div>
+          <div class="frontpagesquare">
+            <h3>Öppethållningstider</h3>
+            <div class="smalldivbreaker">
+            </div>
+            <p>Må-fre: 10:00-19:00 <br> Lö: 11:00- 20:00</p>
+          </div>
+        </div>
+      </div>
+
+
+
+<!--                     DRINKS                    -->
+
+      <div id="drinkpage">
+        <div id="test" class="pagebreaker" onmouseover="boldtext(this)">
+        </div>
+        <h2>DRYCKER</h2>
+        <div class="headingdivbreaker">
+        </div>
+        <div id="drinktables">
+        <div class="foodmenu">
+          <h3>VARMA DRYCKER</h3>
+          <table>
+            <tr>
+              <td class="espresso">Espresso</td>
+              <td class="rightalign">2,50€</td>
+            </tr>
+            <tr>
+              <td>Cappuccino</td>
+              <td>2,50€</td>
+            </tr>
+            <tr>
+              <td>Cafe au lait</td>
+              <td>3,00€</td>
+            </tr>
+            <tr>
+              <td>Latte</td>
+              <td>3,00€</td>
+            </tr>
+            <tr>
+              <td>Chocolate mocha</td>
+              <td>3,50€</td>
+            </tr>
+            <tr>
+              <td>Hot chocolate</td>
+              <td>2,50€</td>
+            </tr>
+            <tr>
+              <td>Mint Choco cappuccino </td>
+              <td>2,50€</td>
+            </tr>
+            <tr>
+              <td>Vanilla latte</td>
+              <td>3,00€</td>
+            </tr>
+            <tr>
+              <td>Vanilla Cappucccino</td>
+              <td>3,50€</td>
+            </tr>
+            <tr>
+              <td>Walnut coffee</td>
+              <td>3,00€</td>
+            </tr>
+            <tr>
+              <td>Spiced cinnamon coffee</td>
+              <td>3,50€</td>
+            </tr>
+            <tr>
+              <td>Espresso Macchiato</td>
+              <td>3,00€</td>
+            </tr>
+          </table>
+        </div>
+        <div class="foodmenu">
+          <h3>KALLA DRYCKER</h3>
+          <table>
+            <tr>
+              <td class="espresso">Espresso</td>
+              <td class="rightalign">2,50€</td>
+            </tr>
+            <tr>
+              <td>Cappuccino</td>
+              <td>2,50€</td>
+            </tr>
+            <tr>
+              <td>Cafe au lait</td>
+              <td>3,00€</td>
+            </tr>
+            <tr>
+              <td>Latte</td>
+              <td>3,00€</td>
+            </tr>
+            <tr>
+              <td>Chocolate mocha</td>
+              <td>3,50€</td>
+            </tr>
+            <tr>
+              <td>Hot chocolate</td>
+              <td>2,50€</td>
+            </tr>
+            <tr>
+              <td>Mint Choco cappuccino </td>
+              <td>2,50€</td>
+            </tr>
+            <tr>
+              <td>Vanilla latte</td>
+              <td>3,00€</td>
+            </tr>
+            <tr>
+              <td>Vanilla Cappucccino</td>
+              <td>3,50€</td>
+            </tr>
+            <tr>
+              <td>Walnut coffee</td>
+              <td>3,00€</td>
+            </tr>
+            <tr>
+              <td>Spiced cinnamon coffee</td>
+              <td>3,50€</td>
+            </tr>
+            <tr>
+              <td>Espresso Macchiato</td>
+              <td>3,00€</td>
+            </tr>
+          </table>
+        </div>
+      </div>
+      </div>
+
+
+
+<!--                           LUNCH                -->
+
+      <div id="lunchpage">
+        <div class="pagebreaker">
+        </div>
+        <h2>LUNCH</h2>
+        <div class="headingdivbreaker">
+        </div>
+        <div class="lunchmenus">
+          <div class="foodmenu">
+            <h3>SALLAD</h3>
+            <table>
+            <tr>
+              <td>Rostad potatissallad   </td>
+              <td>7,50€</td>
+            </tr>
+            <tr>
+              <td>Caesarsallad</td>
+              <td>8,50€</td>
+            </tr>
+            <tr>
+              <td>Tonfisksallad</td>
+              <td>7,00€</td>
+            </tr>
+            <tr>
+              <td>Pastasallad</td>
+              <td>7,00€</td>
+            </tr>
+            </table>
+          </div>
+          <div class="foodmenu">
+            <h3>SOPPA</h3>
+            <table>
+            <tr>
+              <td>Krämig laxsoppa  </td>
+              <td>7,50€</td>
+            </tr>
+            <tr>
+              <td>Löksoppa á la Paris</td>
+              <td>7,50€</td>
+            </tr>
+            <tr>
+              <td>Grönsakssoppa</td>
+              <td>6,50€</td>
+            </tr>
+            </table>
+          </div>
+          <div class="foodmenu">
+            <h3>SMÖRGÅS</h3>
+            <table>
+            <tr>
+              <td>Tonfisksmörgås     </td>
+              <td>4,50€</td>
+            </tr>
+            <tr>
+              <td>BLT sandwich</td>
+              <td>4,50€</td>
+            </tr>
+            <tr>
+              <td>Getostsmörgås</td>
+              <td>4,50€</td>
+            </tr>
+            <tr>
+              <td>Skink-panini</td>
+              <td>5,50€</td>
+            </tr>
+            <tr>
+              <td>Kyckling-panini</td>
+              <td>5,50€</td>
+            </tr>
+            <tr>
+              <td>Grilled cheese sandwich</td>
+              <td>4,50€</td>
+            </tr>
+            </table>
+          </div>
+        </div>
+      </div>
+
+
+
+  <!--                    BREAKFAST               -->
+
+
+      <div id="breakfastpage">
+        <div class="pagebreaker">
+        </div>
+        <h2>FRUKOST</h2>
+        <div class="headingdivbreaker">
+        </div>
+        <div class="breakfastmenus">
+          <div class="foodmenu">
+            <h3>FRUKOST</h3>
+            <table>
+              <tr>
+                <td>Baguette</td>
+                <td>4,50€</td>
+              </tr>
+            <tr>
+              <td>Croissant</td>
+              <td>2,50€</td>
+            </tr>
+            <tr>
+              <td>Pain au Chocolat</td>
+              <td>2,50€</td>
+            </tr>
+            <tr>
+              <td>Brioche</td>
+              <td>2,50€</td>
+            </tr>
+            <tr>
+              <td>Söta våfflor</td>
+              <td>4,50€</td>
+            </tr>
+            <tr>
+              <td>Salta våfflor</td>
+              <td>4,50€</td>
+            </tr>
+            </table>
+          </div>
+          <div class="foodmenu">
+            <h3>Frukostpaket</h3>
+            <table>
+            <tr>
+              <td>Franskt frukostpaket<br>(Cafe au Lait, croissant, sallad, juice, tryffel)</td>
+              <td>12,50€</td>
+            </tr>
+            <tr>
+              <td>Frukost a la Paris<br>(Kaffe/te, skink&ost smörgås, juice, våffla)</td>
+              <td>11,50€</td>
+            </tr>
+            <tr>
+              <td>Champagnefrukost<br>(Kaffe/te, rostat bröd, ostbitas, sallad, brie ost, hallonsylt, champagne)</td>
+              <td>16,50€</td>
+            </tr>
+            </table>
+          </div>
+        </div>
+      </div>
+
+
+  <!--                     PASTRIES             -->
+
+
+      <div id="pastrypage">
+        <div class="pagebreaker">
+        </div>
+        <h2>BAKVERK & SÖTT</h2>
+        <div class="headingdivbreaker">
+        </div>
+        <div class="pastrymenus">
+          <div class="foodmenu">
+            <h3>BAKVERK</h3>
+            <table>
+            <tr>
+              <td>Eclair</td>
+              <td>2,50€</td>
+            </tr>
+            <tr>
+              <td>Blåbärsmuffins</td>
+              <td>2,50€</td>
+            </tr>
+            <tr>
+              <td>Äppelpaj</td>
+              <td>2,50€</td>
+            </tr>
+            <tr>
+              <td>French toast</td>
+              <td>2,50€</td>
+            </tr>
+            <tr>
+              <td>Plättar</td>
+              <td>2,50€</td>
+            </tr>
+            </table>
+          </div>
+          <div class="foodmenu">
+            <h3>DESSERT</h3>
+            <table>
+              <tr>
+                <td>Creme brulee</td>
+                <td>4,50€</td>
+              </tr>
+              <tr>
+                <td>Creme caramel</td>
+                <td>4,50€</td>
+              </tr>
+            </table>
+          </div>
+          <div class="foodmenu">
+            <h3>BRÖD</h3>
+            <table>
+            <tr>
+              <td>Levain</td>
+              <td>6,50€</td>
+            </tr>
+            <tr>
+              <td>Baguette</td>
+              <td>5,50€</td>
+            </tr>
+            <tr>
+              <td>Panini</td>
+              <td>6,50€</td>
+            </tr>
+            <tr>
+              <td>Pariserbröd</td>
+              <td>6,50€</td>
+            </tr>
+            </table>
+          </div>
+        </div>
+      </div>
+
+
+<!--                      CONTACT               -->
+
+      <div id="contactpage">
+        <div class="pagebreaker">
+        </div>
+        <h2>KONTAKT</h2>
+        <div class="headingdivbreaker">
+        </div>
+        <div class="threecolumncontent" id="contactcontent">
+          <div class="onecolumn" id="contactformcolumn">
+            <form id="contactform" >
+              <label for="firstname">Förnamn</label><br>
+              <input type="text" name="firstname" id="firstname" onfocus="formbg(this)"> <br><br>
+              <label for="lastname">Efternamn</label><br>
+              <input type="text" name="lastname" id="lastname" onfocus="formbg(this)"> <br><br>
+              <label for="email">E-post</label><br>
+              <input type="text" onfocus="formbg(this)" oninvalid="alert('Du måste skriva en e-post adress så att vi kan svara');"
+              name="email" id="email" required> <br><br>
+              <label for="message">Meddelande</label><br>
+              <textarea onfocus="formbg(this)" name="message" rows="18" id="message"></textarea> <br><br>
+              <input type="submit" id="btn" value="Skicka" name="submit" onclick="formalert()" >
+            </form>
+            <script>
+
+            </script>
+
+            <script>
+              function formalert() {
+                alert("Vi har tagit emot ditt meddelande, vi återkommer med svar inom 24h");
+              }
+            </script>
+          </div>
+          <div class="onecolumn" id="socialmediacolumn">
+            <p><img onmouseover="bigpic(this)"id="maplogo" src="images/Icon_awesome-map-marker-alt.png" alt="map icon">Rewell Center 107, 65100 Vasa  </p>
+            <p><img id="telelogo" src="images/Icon_awesome-phone-alt.png" alt="phone icon">06 312 3688</p>
+            <p><img id="maillogo" src="images/Icon_material-email.png" alt="">cafedeparis@gmail.com</p>
+            <p><img id="instalogo" src="images/Icon_awesome-instagram.png" alt=""><a href="#">@cafedeparis</a> </p>
+            <p><img id="fblogo" src="images/Icon_metro-facebook.png" alt=""><a href="#">@cafedeparis</a></p>
+          </div>
+          <div class="onecolumn" id="videocolumn">
+            <p>Kika in vår video </p>
+           <iframe id="cafevideo" width="300" height="200"  src="https://www.youtube.com/embed/cGF9LmFl7Ik"  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          </div>
+        </div>
+        <footer>
+          <div class="smalldivbreaker">
+          </div>
+          <div id="footercontent">
+            <div id="links">
+              <h4>Länkar</h4>
+              <a href="#">Jobba hos oss</a><br>
+              <a href="#">Press</a><br>
+              <a href="#">Hållbarhet</a><br>
+              <a href="#">Allergier</a>
+            </div>
+            <div class="footerlogo">
+              <img src="images/logo_white.png" alt="cafedeparis logo white">
+            </div>
+            <p id="copyrightfooter"> &#169; Cafe de Paris 2021</p>
+          </div>
+        </footer>
+      </div>
+      <script>
+
+
+      </script>
+  </body>
+</html>
