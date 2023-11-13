@@ -73,12 +73,12 @@ label {
 }
 
 #cafedeparislogo {
-  margin-top: 22px;
+  margin-top: 20px;
   text-align: center;
   display: inline-block;
   margin-left: auto;
   margin-right: auto;
-  width: 350px;
+  width: 310px;
   position: relative;
   left: 12.5%;
 }
@@ -107,7 +107,7 @@ label {
 }
 
 #banner {
-  background:url(images/cafeinside.png) rgba(255, 252, 242, 0.9);
+  background:rgba(255, 252, 242, 1);
   height: 140px;
   width: 100%;
   background-size:cover;
@@ -118,10 +118,7 @@ label {
 
 }
 
-#banneroverlay {
-  width: 100%;
 
-}
 
 #hamburgericon {
   display: none;
@@ -149,12 +146,12 @@ nav {
   display: inline-block;
   list-style-type: none;
   padding:0;
-  margin: 20;
+  margin: 10px;
 
 }
 
 #navbar li, #navbar li a {
-  font: normal normal normal 22px/32px Glacial Indifference;
+  font: normal normal normal 20px/32px Glacial Indifference;
   letter-spacing: 3px;
   padding-left: 9px;
   padding-right: 9px;
@@ -201,7 +198,7 @@ nav {
 #startpage {
   color: var(--darkbrown);
   padding-top: 190px;
-  background:url(images/cafeinside.png) rgba(255, 252, 247, 0.95);
+  background:url(images/cafeinside.png) rgba(255, 252, 247, 1);
   background-size: 108%;
   background-blend-mode: overlay;
 

@@ -65,9 +65,7 @@ function testResponsive() {
     a.className = "languagebottomclass";
   }
 }
-/*
-  DOM (task 3)
-*/
+
 
 function scrollToId(id) {
   idstring = id;
