@@ -197,21 +197,13 @@ nav {
 
 #startpage {
   color: var(--darkbrown);
-  padding-top: 190px;
-  background:url(images/cafeinside.png) rgba(255, 252, 247, 1);
-  background-size: 108%;
-  background-blend-mode: overlay;
+  padding-top: 196px;
+  background: rgba(255, 252, 247, 1);
+  
 
 
 }
-#startpage h1 {
-  margin: 0;
-  padding-left: 40px;
-  padding-top: 36px;
-  padding-bottom: 20px;
 
-
-}
 
 .smalldivbreaker {
   height: 5px;
@@ -225,14 +217,18 @@ nav {
 }
 
 .frontpagesquare {
-  width: 32%;
+  width: 48%;
   float: left;
+  /*padding-bottom: -60px;*/
+  margin-bottom: -8px;
 
 }
 
+
 .threecolumncontent {
   display: inline-block;
-  padding-bottom: 20px;
+  margin-top: -4px;
+  
 
 }
 
