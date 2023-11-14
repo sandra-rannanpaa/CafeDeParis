@@ -1,3 +1,36 @@
+
+$(document).ready(
+  // Visually marks the selected navigation item in the navbar
+  function(){
+
+  $("#startnav").click(function(){
+    setNavBG("#startnav");
+  });
+  $("#drinknav").click(function(){
+    setNavBG("#drinknav");
+  });
+  $("#lunchnav").click(function(){
+    setNavBG("#lunchnav");
+  });
+  $("#breakfastnav").click(function(){
+    setNavBG("#breakfastnav");
+  });
+  $("#pastrynav").click(function(){
+    setNavBG("#pastrynav");
+  });
+  $("#contactnav").click(function(){
+    setNavBG("#contactnav");
+  });
+
+
+});
+
+function setNavBG(navitem) {
+    $(".navitem").animate({borderWidth:'0px', opacity: 1});
+    $(navitem).animate({borderWidth: '1px', opacity: '1'});
+    ;
+  }
+
 function hamburgerMenu() {
   var x = document.getElementById("navbar");
   if (x.className === "navbarclass") {
@@ -10,12 +43,13 @@ function hamburgerMenu() {
 }
 
 
-
-function testResponsive() {
+// Toggling between displayed nav menu in responsive mode
+function toggleResponsiveNav() {
   var x = document.getElementById("navbar");
 
   if (x.className === "navbarclass") {
     x.className +=" responsive";
+
   }
   else {
     x.className ="navbarclass";
@@ -66,7 +100,7 @@ function testResponsive() {
   }
 }
 
-
+// Scrolls the page to selected nav item
 function scrollToId(id) {
   idstring = id;
   var element = document.getElementById(idstring);
@@ -101,17 +135,4 @@ function languagechoice(language) {
 
   var l = document.getElementById(language);
   l.style["border-bottom"] = "1px solid var(--caramel)";
-}
-
-
-
-function boldtext(navitem) {
-  //navitem.style.backgroundColor: "black";
-}
-function bigpic(pic) {
-  pic.style.height= "100px";
-}
-
-function formbg(x) {
-  x.style.background = "white";
 }

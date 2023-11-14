@@ -4,55 +4,17 @@
   <head>
     <meta charset="utf-8" >
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="stilmall.css">
-    <script src="myScript.js"></script>
+    <link rel="stylesheet" href="stilmall.css">    
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="myScript.js"></script>
     <title>Cafe de Paris</title>
     <meta name="description" content="Cafe de Paris webbsida">
     <meta name="keywords" content="cafe de paris,vasa,kafe, kafe vasa, vasa kafe, cafe vasa, vaasa">
     <meta name="author" content="Sandra Rannanpää">
-    <script>
-      $(document).ready(function(){
-
-        $("#startnav").click(function(){
-          setNavBG("#startnav");
-        });
-        $("#drinknav").click(function(){
-          setNavBG("#drinknav");
-        });
-        $("#lunchnav").click(function(){
-          setNavBG("#lunchnav");
-        });
-        $("#breakfastnav").click(function(){
-          setNavBG("#breakfastnav");
-        });
-        $("#pastrynav").click(function(){
-          setNavBG("#pastrynav");
-        });
-        $("#contactnav").click(function(){
-          setNavBG("#contactnav");
-        });
-
-        function setNavBG(navitem) {
-          $(".navitem").animate({borderWidth:'0px', opacity: 1});
-          $(navitem).animate({borderWidth: '1px', opacity: '1'});
-          ;
-        }
-
-
-        $("#minimizebanner").click(function(){
-          $("#banner").slideToggle("slow")
-
-        });
-
-      });
-
-
-    </script>
 
   </head>
-  <body>
 
+  <body>
     <header>
       <div class="headerclass" id="headerdivId">
         <div class="bannerclass" id="banner">
@@ -68,7 +30,7 @@
       <nav id="hamnav">
         
 
-          <a href="javascript:void(0);" id="hamburgerlink" onclick="testResponsive()"><img id="hamburgericon" src="images/icon_open-menu.png" alt="hamburger menu"></a>
+          <a href="javascript:void(0);" id="hamburgerlink" onclick="toggleResponsiveNav()"><img id="hamburgericon" src="images/icon_open-menu.png" alt="hamburger menu"></a>
         <div class="navbarclass" id="navbar">
 
           <ul id="navlist">
@@ -103,17 +65,12 @@
           </div>
           <div class="frontpagesquare">
             <h3>Nyheter</h3>
-           <!-- <div class="smalldivbreaker"> </div> -->
             
               <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.si ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
-
               <h3>Öppethållningstider</h3>
-              <!--<div class="smalldivbreaker"> </div>-->
-              
               <p>Må-fre: 10:00-19:00 <br> Lö: 11:00- 20:00</p>
             
           </div>
-          
         </div>
       </div>
 
@@ -122,7 +79,7 @@
 <!--                     DRINKS                    -->
 
       <div id="drinkpage">
-        <div id="test" class="pagebreaker" onmouseover="boldtext(this)">
+        <div class="pagebreaker">
         </div>
         <h2>DRYCKER</h2>
         <div class="headingdivbreaker">
@@ -515,9 +472,5 @@
           </div>
         </footer>
       </div>
-      <script>
-
-
-      </script>
   </body>
 </html>

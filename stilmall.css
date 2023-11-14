@@ -3,37 +3,24 @@
   --lightcream: #F8F6F0;
   --darkbrown: #48392A;
   --toffee: #E3AF78;
-
-
   --pastelgreen: #AECEAA;
   --pastelpink:  #EEBBB4;
   --pastelyellow: #F0DB87;
   --textcontent: normal normal normal 22px/36px Glacial Indifference;
   --textcontentthinner: normal normal normal 18px/20px Glacial Indifference;
 }
-#divbox {
-  background-color: black;
-  height: 55px;
-  width: 150px;
-  position: absolute;
-  //background-blend-mode:  overlay;
-  display: none;
-}
 body {
   margin: 0px;
   padding: 0px;
 }
 
-h1,h2, h3, table{
+
+h1,h2,h3, table {
   margin-left: 40px;
   font: normal normal bold 36px/30px Glacial Indifference;
-}
-
-h2 {
-  /* drinks/lunch etc.*/
-  //padding-top: 10px;
   letter-spacing: 3px;
 }
+
 
 table {
   padding-right: 20px;
@@ -92,7 +79,6 @@ label {
   color: var(--caramel);
   margin-right: 20px;
   margin-top: 20px;
-  display: inline-block;
   position: relative;
   font: var(--textcontent);
   letter-spacing: 1px;
@@ -138,8 +124,7 @@ nav {
 
 
   color: var(--lightcream);
-  text-align: center; /* This centers the nav text */
-
+  text-align: center; 
 }
 
 #navbar ul {
@@ -160,7 +145,6 @@ nav {
 
 }
 #navbar li {
-  //border: 1px solid green;
   margin: 0;
   padding: 2px;
 
@@ -192,15 +176,13 @@ nav {
 
 }
 
-/*--------------------------------FRONTPAGE-----------------*/
+/*----------------------FRONTPAGE-----------------*/
 
 
 #startpage {
   color: var(--darkbrown);
   padding-top: 196px;
   background: rgba(255, 252, 247, 1);
-  
-
 
 }
 
@@ -219,16 +201,13 @@ nav {
 .frontpagesquare {
   width: 48%;
   float: left;
-  /*padding-bottom: -60px;*/
   margin-bottom: -8px;
 
 }
 
-
 .threecolumncontent {
   display: inline-block;
   margin-top: -4px;
-  
 
 }
 
@@ -255,7 +234,7 @@ nav {
 
 }
 
-/*--------------------DRINKS-------------------------------*/
+/*--------------------DRINKS--------------------------*/
 
 #drinkpage {
   color: var(--lightcream);
@@ -271,7 +250,7 @@ nav {
 }
 
 
-/*--------------------LUNCH-------------------------------*/
+/*--------------------LUNCH-------------------------*/
 #lunchpage {
   background: url(images/salad.png), rgba(5,40,2,0.92);
   background-blend-mode: darken;
@@ -373,14 +352,12 @@ nav {
 }
 
 #progressbar {
-  //display: none;
   width: 80%;
-  //background-color: blue;
   border-radius: 2px;
   border: 2px solid white;
-
   margin-top: 10px;
 }
+
 #progressbar p {
   padding: 0;
   margin: 5px;
@@ -420,37 +397,35 @@ footer .smalldivbreaker {
 
 
 footer h4 {
-
   font: normal normal normal 28px/5px Glacial Indifference;
   letter-spacing: 1px;
 }
 
 footer {
   background-color:rgba(0,0,0,0.5);
-
 }
+
 footer a {
   color: var(--lightcream);
   font: var(--textcontent);
   letter-spacing: 1px;
 
 }
+
 #copyrightfooter {
   text-align: right;
   margin-right: 20px;
   margin-top: 0;
   padding-top: 0;
-
 }
+
 #links {
   text-align: center;
-
 }
 
 .footerlogo {
   text-align: center;
   margin-top: 20px;
-
 }
 
 
@@ -476,8 +451,6 @@ footer a {
       background-size: 400%;
   }
 
-
-
   p {
     margin-left: 20px;
     margin-right: 20px;
@@ -492,8 +465,7 @@ footer a {
     font: normal normal normal 22px/30px Glacial Indifference;
     letter-spacing: 1px;
     padding-right: 8px;
-    //text-align: left;
-    //border-bottom: 1px solid var(--lightcream);
+    
   }
 
   .smalldivbreaker, .headingdivbreaker {
@@ -510,7 +482,7 @@ footer a {
   .frontpagesquare, .onecolumn {
     width: 100%;
     display: block;
-    //border: 3px solid green;
+  
     padding: 0px;
 
   }
@@ -530,30 +502,24 @@ footer a {
   }
 
 
-
   #navbar {
     background-color: var(--lightcream);
     opacity: 1;
   }
-  #minimizebanner {
-    display: none;
-    position: fixed;
-    top: 10px;
-    left: 10px;
-  }
+
 
   #hamburgericon {
+    
+   position: relative;
     display: inline-block;
-    position: relative;
-    float: right;
-    top: 50px;
-    margin-right: 20px;
+    float: left;
+    top: 40px;
+    margin-left: 20px;
 
   }
   #cafedeparislogo {
 
     width: 50%;
-    //left: 9%;
     margin-bottom: 5px;
 
   }
@@ -575,12 +541,17 @@ footer a {
 
   .navbarclass.responsive {
     display: block;
-    height: 100vh;
-
+    top: 0;
+    margin: 0;
+    height: 100%;
 
 
   }
-  #navbar ul, #navbar li,, #navbar li a, #hamnav{
+  nav {
+    top:0;
+    height: 100%;
+  }
+  #navbar ul, #navbar li, #navbar li a, #hamnav{
     margin: 0;
     color: var(--caramel);
 
@@ -594,11 +565,13 @@ footer a {
   #navbar ul {
 
     display: block;
-    padding-top: 150px;
+    padding-top: 10px;
     vertical-align: middle;
   }
   #hamnav {
     top: 0;
+  
+margin: 0;
   }
   .navbarclass.responsive #navlist a {
     display: block;
